@@ -8,7 +8,9 @@
 <meta name="description" content="Exactus Wiktorowski i Wspólnicy sp.j. z Łodzi od 1991 roku organizuje zjazdy, konferencje i wystawy w całej Polsce, w tym wystawę stomatologiczną CEDE. Tel. +48 42 632 28 66.">
 <meta name="theme-color" content="#3F4096">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="img/h-okulistyka-960.webp" imagesrcset="img/h-okulistyka-640.webp 640w, img/h-okulistyka-960.webp 960w, img/h-okulistyka-1280.webp 1280w, img/h-okulistyka-1920.webp 1920w" imagesizes="(max-width:760px) 150vw, 100vw" fetchpriority="high">
+<link rel="preload" as="image" href="img/h-okulistyka-m.webp" imagesrcset="img/h-okulistyka-m540.webp 540w, img/h-okulistyka-m.webp 820w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/h-okulistyka-1280.webp" imagesrcset="img/h-okulistyka-960.webp 960w, img/h-okulistyka-1280.webp 1280w, img/h-okulistyka-1920.webp 1920w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-normal-pl.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/archivo-normal-rdzen.woff2" crossorigin>
 <style>
 @font-face{font-family:Archivo;src:url(fonts/archivo-normal-rdzen.woff2) format("woff2");font-weight:400 800;font-stretch:100% 125%;font-display:swap;unicode-range:U+0020-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026}
@@ -70,22 +72,21 @@ p{margin:0}
 /* pierwszy ekran: trzy pasy jak w logo */
 .hero{display:flex;flex-direction:column;gap:6px;min-height:calc(100svh - var(--hh));background:#fff;padding:6px 0 0}
 .pas{position:relative;overflow:hidden;background:var(--tlo2)}
-.pas>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pas img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .pas1,.pas3{flex:1 1 0;min-height:92px}
-.pas1>img{object-position:62% 45%}
-.pas3>img{object-position:58% 40%}
+.pas1 img{object-position:50% 45%}
+.pas3 img{object-position:50% 40%}
 .pas2{flex:0 0 auto;background:var(--nieb)}
-.pas2>img{object-position:30% 50%}
+.pas2 img{object-position:50% 50%}
 .panel{position:relative;background:rgba(63,64,150,.93);color:#fff;padding:22px 4vw 24px}
 .panel h1{font-size:clamp(26px,7.2vw,36px);max-width:22ch}
 .panel p{font-size:clamp(15px,4.1vw,17px);line-height:1.5;margin-top:12px;max-width:52ch;color:#E9EAF6}
 .panel .btn{margin-top:24px}
-.znacznik{position:absolute;right:0;bottom:0;background:var(--czer);color:#fff;font-weight:700;font-stretch:108%;font-size:13px;line-height:1;padding:8px 16px 8px 18px;clip-path:polygon(10px 0,100% 0,100% 100%,0 100%)}
+.znacznik{position:absolute;right:0;bottom:0;background:var(--czer2);color:#fff;font-weight:700;font-stretch:108%;font-size:13px;line-height:1;padding:8px 16px 8px 18px;clip-path:polygon(10px 0,100% 0,100% 100%,0 100%)}
 @media (min-width:761px){
  .hero{gap:8px;padding-top:8px}
  .pas1,.pas3{clip-path:polygon(calc(5vw + var(--skos)) 0,100% 0,100% 100%,5vw 100%)}
  .pas2{background:transparent}
- .pas2>img{object-position:50% 50%}
  .panel{width:max(60%,calc((100vw - var(--wrap))/2 + 820px));max-width:100%;padding:clamp(30px,4.2svh,54px) calc(var(--skos) + 4vw) clamp(32px,4.6svh,58px) max(4vw,calc((100vw - var(--wrap))/2));clip-path:polygon(0 0,100% 0,calc(100% - var(--skos)) 100%,0 100%);background:rgba(63,64,150,.92)}
  .panel h1{font-size:clamp(36px,3.5vw,72px);max-width:21ch}
  .panel p{font-size:clamp(17px,1.15vw,21px);margin-top:16px}
@@ -302,11 +303,11 @@ form .btn{justify-self:start}
 <main>
 <section class="hero" aria-label="Exactus">
  <div class="pas pas1">
-  <img src="img/h-stoiska-960.webp" srcset="img/h-stoiska-640.webp 640w, img/h-stoiska-960.webp 960w, img/h-stoiska-1280.webp 1280w, img/h-stoiska-1920.webp 1920w" sizes="(max-width:760px) 150vw, 100vw" width="1920" height="430" alt="Wystawa: stoiska i zwiedzający">
+  <picture><source media="(max-width:760px)" srcset="img/h-stoiska-m540.webp 540w, img/h-stoiska-m.webp 820w" sizes="100vw"><img src="img/h-stoiska-960.webp" srcset="img/h-stoiska-640.webp 640w, img/h-stoiska-960.webp 960w, img/h-stoiska-1280.webp 1280w, img/h-stoiska-1920.webp 1920w" sizes="100vw" width="1920" height="430" alt="Wystawa: stoiska i zwiedzający"></picture>
   <span class="znacznik">Wystawa</span>
  </div>
  <div class="pas pas2">
-  <img src="img/h-okulistyka-960.webp" srcset="img/h-okulistyka-640.webp 640w, img/h-okulistyka-960.webp 960w, img/h-okulistyka-1280.webp 1280w, img/h-okulistyka-1920.webp 1920w" sizes="(max-width:760px) 150vw, 100vw" width="1920" height="430" alt="Sala wykładowa podczas sesji naukowej" fetchpriority="high">
+  <picture><source media="(max-width:760px)" srcset="img/h-okulistyka-m540.webp 540w, img/h-okulistyka-m.webp 820w" sizes="100vw"><img src="img/h-okulistyka-960.webp" srcset="img/h-okulistyka-640.webp 640w, img/h-okulistyka-960.webp 960w, img/h-okulistyka-1280.webp 1280w, img/h-okulistyka-1920.webp 1920w" sizes="100vw" width="1920" height="430" alt="Sala wykładowa podczas sesji naukowej" fetchpriority="high"></picture>
   <div class="panel">
    <h1>Organizujemy zjazdy, konferencje i&nbsp;wystawy</h1>
    <p>Od 1991 roku, z Łodzi, w całej Polsce. Kompleksowo: od projektu i budżetu, przez rejestrację i recepcję, po rozliczenie ze zleceniodawcą.</p>
@@ -314,7 +315,7 @@ form .btn{justify-self:start}
   </div>
  </div>
  <div class="pas pas3">
-  <img src="img/h-demonstracje-960.webp" srcset="img/h-demonstracje-640.webp 640w, img/h-demonstracje-960.webp 960w, img/h-demonstracje-1280.webp 1280w, img/h-demonstracje-1920.webp 1920w" sizes="(max-width:760px) 150vw, 100vw" width="1920" height="430" alt="Demonstracje na żywo przy fotelu stomatologicznym" loading="lazy">
+  <picture><source media="(max-width:760px)" srcset="img/h-demonstracje-m540.webp 540w, img/h-demonstracje-m.webp 820w" sizes="100vw"><img src="img/h-demonstracje-960.webp" srcset="img/h-demonstracje-640.webp 640w, img/h-demonstracje-960.webp 960w, img/h-demonstracje-1280.webp 1280w, img/h-demonstracje-1920.webp 1920w" sizes="100vw" width="1920" height="430" alt="Demonstracje na żywo przy fotelu stomatologicznym" loading="lazy"></picture>
   <span class="znacznik">Demonstracje na żywo</span>
  </div>
 </section>
