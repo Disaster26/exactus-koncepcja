@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Exactus - organizacja zjazdów, konferencji i wystaw | Łódź, od 1991 roku</title>
+<meta name="description" content="Exactus Wiktorowski i Wspólnicy sp.j. z Łodzi od 1991 roku organizuje zjazdy, konferencje i wystawy w całej Polsce, w tym wystawę stomatologiczną CEDE. Tel. +48 42 632 28 66.">
+<meta name="theme-color" content="#3F4096">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/h-okulistyka-960.webp" imagesrcset="img/h-okulistyka-640.webp 640w, img/h-okulistyka-960.webp 960w, img/h-okulistyka-1280.webp 1280w, img/h-okulistyka-1920.webp 1920w" imagesizes="(max-width:760px) 150vw, 100vw" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-normal-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;src:url(fonts/archivo-normal-rdzen.woff2) format("woff2");font-weight:400 800;font-stretch:100% 125%;font-display:swap;unicode-range:U+0020-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026}
+@font-face{font-family:Archivo;src:url(fonts/archivo-normal-pl.woff2) format("woff2");font-weight:400 800;font-stretch:100% 125%;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--czer:#EE3338;--czer2:#D4232A;--nieb:#3F4096;--nieb2:#2F3080;--gran:#23246A;--tekst:#1B1C3A;--szary:#5A5D72;--tlo2:#EEF0F4;--linia:#D9DCE5;--hh:64px;--wrap:min(92vw,1680px);--skos:clamp(26px,3.2vw,64px)}
+@media (min-width:761px){:root{--hh:76px}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.6 Archivo,system-ui,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:700;font-stretch:112%;line-height:1.08;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 30px 0 26px;font:inherit;font-weight:700;font-stretch:108%;font-size:17px;text-decoration:none;border:0;cursor:pointer;color:#fff;background:var(--czer2);clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:background .2s}
+.btn{line-height:1.25;padding-block:10px;text-align:left}
+@media (max-width:380px){.btn{font-size:15.5px;padding-inline:18px 24px}}
+.btn:hover,.btn:focus-visible{background:#B81B22}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:-6px}
+.btn-jasny{background:#fff;color:var(--gran)}
+.btn-jasny:hover,.btn-jasny:focus-visible{background:#E4E6F2}
+.btn-jasny:focus-visible{outline-color:var(--gran)}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--nieb)}
+.logo svg{width:auto;height:30px}
+@media (min-width:761px){.logo svg{height:36px}}
+.logo .slowo{font-weight:600;font-stretch:104%;font-size:27px;letter-spacing:.005em;transform:skewX(-12deg);line-height:1;padding-bottom:2px}
+@media (min-width:761px){.logo .slowo{font-size:31px}}
+.menu{display:flex;align-items:center;gap:clamp(18px,2vw,38px)}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;padding:6px 0;position:relative}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--czer);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.menu a:hover::after,.menu a[aria-current="true"]::after{transform:scaleX(1)}
+.tel{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-stretch:106%;color:var(--nieb);font-size:17px;white-space:nowrap}
+.tel svg{width:20px;height:20px;flex:none}
+.burger{display:none}
+@media (max-width:1100px){
+ .menu{position:fixed;inset:var(--hh) 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:8px 4vw 22px;border-bottom:4px solid var(--nieb);box-shadow:0 18px 30px rgba(27,28,58,.14);transform:translateY(-12px);opacity:0;visibility:hidden;transition:.2s}
+ .menu.otw{transform:none;opacity:1;visibility:visible}
+ .menu a{padding:14px 0;font-size:19px;border-bottom:1px solid var(--linia);line-height:1.45}
+ .menu a::after{display:none}
+ .menu .tel{padding-top:18px;border:0;font-size:19px}
+ .burger{display:flex;flex-direction:column;justify-content:center;gap:6px;width:46px;height:46px;border:0;background:none;padding:0 6px;cursor:pointer;margin-right:-6px}
+ .burger span{display:block;height:3px;background:var(--nieb)}
+ .burger span:nth-child(1){width:100%;background:var(--czer)}
+ .burger span:nth-child(2){width:78%}
+ .burger span:nth-child(3){width:100%;background:var(--czer)}
+ .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+ .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+ .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+ .top-tel{display:flex}
+}
+@media (min-width:1101px){.top-tel{display:none}}
+.top-tel{width:46px;height:46px;align-items:center;justify-content:center;color:var(--nieb);margin-left:auto}
+.top-tel svg{width:24px;height:24px}
+
+/* pierwszy ekran: trzy pasy jak w logo */
+.hero{display:flex;flex-direction:column;gap:6px;min-height:calc(100svh - var(--hh));background:#fff;padding:6px 0 0}
+.pas{position:relative;overflow:hidden;background:var(--tlo2)}
+.pas>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pas1,.pas3{flex:1 1 0;min-height:92px}
+.pas1>img{object-position:62% 45%}
+.pas3>img{object-position:58% 40%}
+.pas2{flex:0 0 auto;background:var(--nieb)}
+.pas2>img{object-position:30% 50%}
+.panel{position:relative;background:rgba(63,64,150,.93);color:#fff;padding:22px 4vw 24px}
+.panel h1{font-size:clamp(26px,7.2vw,36px);max-width:22ch}
+.panel p{font-size:clamp(15px,4.1vw,17px);line-height:1.5;margin-top:12px;max-width:52ch;color:#E9EAF6}
+.panel .btn{margin-top:24px}
+.znacznik{position:absolute;right:0;bottom:0;background:var(--czer);color:#fff;font-weight:700;font-stretch:108%;font-size:13px;line-height:1;padding:8px 16px 8px 18px;clip-path:polygon(10px 0,100% 0,100% 100%,0 100%)}
+@media (min-width:761px){
+ .hero{gap:8px;padding-top:8px}
+ .pas1,.pas3{clip-path:polygon(calc(5vw + var(--skos)) 0,100% 0,100% 100%,5vw 100%)}
+ .pas2{background:transparent}
+ .pas2>img{object-position:50% 50%}
+ .panel{width:max(60%,calc((100vw - var(--wrap))/2 + 820px));max-width:100%;padding:clamp(30px,4.2svh,54px) calc(var(--skos) + 4vw) clamp(32px,4.6svh,58px) max(4vw,calc((100vw - var(--wrap))/2));clip-path:polygon(0 0,100% 0,calc(100% - var(--skos)) 100%,0 100%);background:rgba(63,64,150,.92)}
+ .panel h1{font-size:clamp(36px,3.5vw,72px);max-width:21ch}
+ .panel p{font-size:clamp(17px,1.15vw,21px);margin-top:16px}
+ .panel .btn{margin-top:30px;min-height:58px;font-size:18px;padding:0 36px 0 30px}
+ .znacznik{font-size:15px;padding:10px 4vw 10px 26px;clip-path:polygon(14px 0,100% 0,100% 100%,0 100%)}
+ .znacznik{padding-right:max(4vw,calc((100vw - var(--wrap))/2))}
+}
+
+/* sekcje */
+.sek{padding:clamp(56px,8vw,120px) 0}
+.sek-szara{background:var(--tlo2)}
+.sek h2{font-size:clamp(28px,3.3vw,54px);max-width:24ch}
+.lead{font-size:clamp(17px,1.2vw,20px);color:var(--szary);margin-top:16px;max-width:62ch}
+.sek-glowa{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(28px,3.4vw,52px)}
+
+/* firma */
+.firma{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:980px){.firma{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(48px,6vw,120px);align-items:start}}
+.firma .tekst p{margin-top:16px;max-width:60ch;color:#34364F}
+.firma .tekst p:first-of-type{margin-top:22px;font-size:clamp(18px,1.25vw,21px);color:var(--tekst)}
+.etapy h3{font-size:19px;font-stretch:108%;margin-bottom:8px;color:var(--nieb)}
+.etapy ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);border-top:2px solid var(--nieb)}
+@media (min-width:600px){.etapy ol{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}}
+.etapy li{display:flex;align-items:center;gap:16px;padding:17px 0;border-bottom:1px solid var(--linia);font-weight:600;font-size:18px;line-height:1.35}
+.etapy li::before{content:"";flex:none;width:30px;height:11px;background:var(--czer);clip-path:polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%)}
+.etapy li:nth-child(even)::before{background:var(--nieb)}
+@media (min-width:600px){.etapy li:nth-child(even)::before{background:var(--czer)}.etapy li:nth-child(4n+2)::before,.etapy li:nth-child(4n+3)::before{background:var(--nieb)}}
+.etapy .uw{margin-top:20px;color:var(--szary);font-size:16px}
+
+/* galeria panoram */
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(10px,1vw,18px)}
+.gal button{position:relative;display:block;padding:0;border:0;background:#cfd3dd;cursor:zoom-in;overflow:hidden;aspect-ratio:1920/430}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal button:hover img{transform:scale(1.03)}
+.gal .znacznik{font-size:14px}
+@media (min-width:761px){.gal .znacznik{padding:9px 18px 9px 24px}}
+@media (min-width:1900px){.gal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){
+ .gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-4vw;padding:0 4vw 6px;scroll-padding-inline:4vw;scrollbar-width:none}
+ .gal::-webkit-scrollbar{display:none}
+ .gal button{flex:0 0 84vw;aspect-ratio:2/1;scroll-snap-align:start}
+}
+.przes{display:flex;gap:8px}
+.przes button{width:52px;height:46px;border:2px solid currentColor;background:none;color:inherit;cursor:pointer;display:flex;align-items:center;justify-content:center;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);border:0;background:currentColor}
+.ch{display:block;width:12px;height:12px;border:solid #fff;border-width:0 3px 3px 0}
+.ch-l{transform:translateX(2px) rotate(135deg)}
+.ch-p{transform:translateX(-2px) rotate(-45deg)}
+.sek-ciemna .przes{color:#fff}
+.sek-ciemna .przes .ch{border-color:var(--gran)}
+.x{position:relative;display:block;width:28px;height:28px}
+.x::before,.x::after{content:"";position:absolute;left:-2px;right:-2px;top:12px;height:3px;background:#fff;transform:rotate(45deg)}
+.x::after{transform:rotate(-45deg)}
+.lb .ch{width:18px;height:18px}
+.przes button:disabled{opacity:.35;cursor:default}
+@media (max-width:760px){.przes{display:none}}
+.gal-info{display:none;margin-top:14px;color:var(--szary);font-size:15px}
+@media (max-width:760px){.gal-info{display:block}}
+
+/* CEDE */
+.sek-ciemna{background:var(--gran);color:#fff;position:relative;overflow:hidden}
+.pasy-tlo{display:block;width:clamp(120px,14vw,250px);height:auto;margin-bottom:clamp(24px,3vw,44px)}
+.cede{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:28px 80px}
+@media (min-width:980px){.cede{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end}}
+.cede h2{max-width:20ch}
+.cede .opis p{color:#D8D9EE;max-width:62ch;margin-top:16px}
+.cede .opis p:first-child{margin-top:0;color:#fff;font-size:clamp(18px,1.3vw,22px)}
+.cede .btn{margin-top:28px}
+.edycje{position:relative;margin-top:clamp(40px,5vw,72px)}
+.rzad{display:flex;gap:clamp(10px,1vw,16px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
+.rzad::-webkit-scrollbar{display:none}
+.rzad.ciag{cursor:grabbing;scroll-snap-type:none}
+.rzad.ciag a{pointer-events:none}
+.ed{flex:0 0 clamp(150px,13vw,230px);scroll-snap-align:start;text-decoration:none;color:#fff}
+.ed .kafel{background:#fff;aspect-ratio:200/126;display:flex;align-items:center;justify-content:center;padding:8px;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%)}
+.ed img{width:100%;height:100%;object-fit:contain}
+.ed b{display:block;margin-top:12px;font-stretch:108%;font-size:17px}
+.ed span{display:block;color:#BFC1E3;font-size:15px;line-height:1.4}
+.edycje .sek-glowa{margin-bottom:22px}
+.edycje h3{font-size:clamp(20px,1.5vw,26px)}
+
+/* kongresy - karty */
+.karty .rzad{gap:clamp(12px,1.2vw,20px)}
+.karta{flex:0 0 clamp(272px,23vw,400px);scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;border:1px solid var(--linia);border-top:4px solid var(--nieb)}
+.karta:nth-child(3n+2){border-top-color:var(--czer)}
+.karta .log{height:150px;display:flex;align-items:center;justify-content:center;padding:18px;border-bottom:1px solid var(--linia)}
+.karta .log img{max-height:100%;width:auto;object-fit:contain}
+.karta .tr{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.karta .kiedy{font-size:15px;font-weight:600;color:var(--czer2)}
+.karta h3{font-size:20px;font-stretch:106%;line-height:1.22;margin-top:6px}
+.karta p{font-size:16px;color:var(--szary);margin-top:10px;line-height:1.5}
+.karta a.wiecej{margin-top:auto;padding-top:16px;font-weight:700;color:var(--nieb);text-decoration:none;font-size:16px}
+.karta a.wiecej:hover{text-decoration:underline}
+
+/* filmy */
+.filmy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,1.2vw,20px)}
+@media (min-width:1100px){.filmy{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:560px){.filmy{gap:16px 10px}.film figcaption{font-size:15px}.film figcaption span{font-size:13px}.film button .graj{width:64px;height:64px;margin:-32px 0 0 -32px}.film button .graj::after{inset:9px}.film button .graj svg{width:20px;height:20px;margin-left:3px}}
+.film{margin:0}
+.film .ekran{position:relative;aspect-ratio:4/3;background:#111;overflow:hidden}
+.film button{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:#111;cursor:pointer}
+.film button img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.film button .graj{position:absolute;left:50%;top:50%;width:104px;height:104px;margin:-52px 0 0 -52px;border-radius:50%;background:#111;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px rgba(255,255,255,.18)}
+.film button .graj::after{content:"";position:absolute;inset:14px;border-radius:50%;background:var(--czer2)}
+.film button .graj svg{position:relative;z-index:1;width:30px;height:30px;margin-left:5px;color:#fff}
+.film button:hover .graj::after{background:#B81B22}
+.film video{width:100%;height:100%;display:block;background:#000}
+.film figcaption{margin-top:12px;font-weight:600;font-size:17px;line-height:1.35}
+.film figcaption span{display:block;font-weight:400;color:var(--szary);font-size:15px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr);gap:44px}
+@media (min-width:980px){.kontakt{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(48px,6vw,110px)}}
+.dane{margin-top:26px;display:grid;gap:22px}
+.dane div{border-left:4px solid var(--nieb);padding-left:18px}
+.dane div:nth-child(2){border-left-color:var(--czer)}
+.dane b{display:block;font-stretch:106%;font-size:18px}
+.dane a{color:var(--nieb);font-weight:600;text-decoration:none}
+.dane a:hover{text-decoration:underline}
+.dane span{color:var(--szary)}
+form{background:var(--tlo2);padding:clamp(22px,3vw,44px);display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:600px){form{grid-template-columns:repeat(2,minmax(0,1fr))}.pelne{grid-column:1/-1}}
+label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #C3C7D3;background:#fff;color:var(--tekst);border-radius:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--nieb);outline-offset:0;border-color:var(--nieb)}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-self:start}
+.form-info{font-size:15px;color:var(--szary);align-self:center}
+.form-ok{display:none;background:#fff;border-left:4px solid var(--nieb);padding:14px 16px;font-weight:600}
+.mapa{margin-top:clamp(40px,5vw,72px);position:relative;min-height:clamp(240px,24vw,400px);background:var(--tlo2);display:flex;align-items:center;padding:28px clamp(22px,4vw,64px);overflow:hidden}
+.mapa .adr{position:relative;z-index:1}
+.mapa .adr b{display:block;font-size:clamp(22px,2vw,32px);font-stretch:110%;line-height:1.15}
+.mapa .adr p{color:var(--szary);margin:8px 0 20px;max-width:46ch;font-size:16px}
+.mapa .adr .btn{margin-right:14px}
+.mapa .trasa{font-weight:700;color:var(--nieb);display:inline-block;padding:10px 0}
+.mapa .pasy-tlo{position:absolute;right:clamp(16px,4vw,64px);top:50%;transform:translateY(-50%);width:clamp(140px,18vw,300px);margin:0}
+@media (max-width:700px){.mapa .pasy-tlo{display:none}}
+.mapa.jest{padding:0;min-height:clamp(300px,32vw,460px)}
+.mapa.jest .adr,.mapa.jest .pasy-tlo{display:none}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa button{position:relative}
+
+/* stopka */
+.stopka{background:var(--tlo2);border-top:6px solid var(--nieb);padding:44px 0 26px;font-size:15px;color:#3E4157}
+.stopka .wrap>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 24px}
+@media (min-width:900px){.stopka .wrap>div{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.stopka b{display:block;color:var(--tekst);font-stretch:106%;margin-bottom:6px;font-size:16px}
+.stopka a{text-decoration:none}
+.stopka a:hover{text-decoration:underline}
+.stopka ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.stopka .logo{margin-bottom:12px}
+.stopka .dol .wylinka-badge{flex:none;white-space:nowrap}
+.stopka .wylinka-badge b{display:inline;margin:0;font-size:inherit;color:inherit}
+.stopka .dol .copy{font-size:14px}
+.stopka .dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;margin-top:34px;padding-top:18px;border-top:1px solid var(--linia);font-size:16px}
+@media (max-width:560px){.stopka .pierwsza{grid-column:1/-1}}
+
+/* dolny pasek tel. */
+.mob{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;grid-template-columns:1fr 1.4fr;background:#fff;box-shadow:0 -6px 20px rgba(27,28,58,.16);transform:translateY(110%);transition:transform .25s}
+.mob a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;font-weight:700;text-decoration:none;font-size:16px}
+.mob a:first-child{color:var(--nieb)}
+.mob a:last-child{background:var(--czer2);color:#fff}
+.mob svg{width:20px;height:20px}
+@media (max-width:760px){.mob{display:grid}.mob.widac{transform:none}body.ma-mob .stopka{padding-bottom:84px}}
+
+/* zgoda */
+.zgoda{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:560px;background:#fff;border:1px solid var(--linia);border-top:4px solid var(--nieb);box-shadow:0 10px 30px rgba(27,28,58,.18);padding:14px 16px;font-size:14px;line-height:1.45;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.zgoda[hidden]{display:none}
+.zgoda p{flex:1 1 260px}
+.zgoda button{font:inherit;font-weight:700;font-size:14px;padding:9px 14px;border:1px solid var(--nieb);background:#fff;color:var(--nieb);cursor:pointer}
+.zgoda button.tak{background:var(--nieb);color:#fff}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(14,15,40,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:60px 12px}
+.lb.otw{display:flex}
+.lb img{max-width:min(96vw,1920px);max-height:76vh;width:auto;height:auto}
+.lb p{color:#fff;margin-top:14px;font-weight:600;text-align:center}
+.lb p span{color:#B9BBDD;font-weight:400;margin-left:10px}
+.lb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;width:56px;height:56px;display:flex;align-items:center;justify-content:center}
+.lb button svg{width:30px;height:30px}
+.lb .zam{top:8px;right:8px}
+.lb .pop{left:6px;top:50%;margin-top:-28px}
+.lb .nas{right:6px;top:50%;margin-top:-28px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="Exactus - strona główna"><svg viewBox="0 0 235 157" aria-hidden="true"><polygon fill="#EE3338" points="65,5 217,5 230,45 65,45"/><polygon fill="#3F4096" points="30,60 175,60 167,98 5,98"/><polygon fill="#EE3338" points="63,115 230,115 217,152 45,152"/></svg><span class="slowo">exactus</span></a>
+  <a class="top-tel" href="tel:+48426322866" aria-label="Zadzwoń: +48 42 632 28 66"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.6 1.6a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
+  <nav class="menu" id="menu" aria-label="Menu">
+   <a href="#firma">Firma</a>
+   <a href="#na-miejscu">Na miejscu</a>
+   <a href="#cede">CEDE</a>
+   <a href="#kongresy">Kongresy i konferencje</a>
+   <a href="#filmy">Filmy</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="tel" href="tel:+48426322866"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.6 1.6a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>+48 42 632 28 66</a>
+  </nav>
+  <button class="burger" aria-controls="menu" aria-expanded="false" aria-label="Otwórz menu"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Exactus">
+ <div class="pas pas1">
+  <img src="img/h-stoiska-960.webp" srcset="img/h-stoiska-640.webp 640w, img/h-stoiska-960.webp 960w, img/h-stoiska-1280.webp 1280w, img/h-stoiska-1920.webp 1920w" sizes="(max-width:760px) 150vw, 100vw" width="1920" height="430" alt="Wystawa: stoiska i zwiedzający">
+  <span class="znacznik">Wystawa</span>
+ </div>
+ <div class="pas pas2">
+  <img src="img/h-okulistyka-960.webp" srcset="img/h-okulistyka-640.webp 640w, img/h-okulistyka-960.webp 960w, img/h-okulistyka-1280.webp 1280w, img/h-okulistyka-1920.webp 1920w" sizes="(max-width:760px) 150vw, 100vw" width="1920" height="430" alt="Sala wykładowa podczas sesji naukowej" fetchpriority="high">
+  <div class="panel">
+   <h1>Organizujemy zjazdy, konferencje i&nbsp;wystawy</h1>
+   <p>Od 1991 roku, z Łodzi, w całej Polsce. Kompleksowo: od projektu i budżetu, przez rejestrację i recepcję, po rozliczenie ze zleceniodawcą.</p>
+   <a class="btn" id="cta" href="#kontakt">Zapytaj o organizację wydarzenia</a>
+  </div>
+ </div>
+ <div class="pas pas3">
+  <img src="img/h-demonstracje-960.webp" srcset="img/h-demonstracje-640.webp 640w, img/h-demonstracje-960.webp 960w, img/h-demonstracje-1280.webp 1280w, img/h-demonstracje-1920.webp 1920w" sizes="(max-width:760px) 150vw, 100vw" width="1920" height="430" alt="Demonstracje na żywo przy fotelu stomatologicznym" loading="lazy">
+  <span class="znacznik">Demonstracje na żywo</span>
+ </div>
+</section>
+
+<section class="sek" id="firma">
+ <div class="wrap firma">
+  <div class="tekst">
+   <h2>Jedno zlecenie, od projektu do rozliczenia</h2>
+   <p>Jesteśmy firmą działającą od 1991 roku, obecnie jako Exactus Wiktorowski i&nbsp;Wspólnicy spółka jawna. Siedzibę mamy w Łodzi, a wydarzenia organizujemy na terenie całego kraju.</p>
+   <p>Każde wydarzenie prowadzimy kompleksowo. Pracujemy dla towarzystw naukowych i środowisk medycznych: stomatologów, protetyków, gastroenterologów i innych specjalności, a co roku organizujemy wystawę stomatologiczną CEDE.</p>
+  </div>
+  <div class="etapy">
+   <h3>Co robimy przy każdym wydarzeniu</h3>
+   <ol>
+    <li>Projekt wydarzenia</li>
+    <li>Budżetowanie</li>
+    <li>Rejestracja uczestników</li>
+    <li>Fakturowanie</li>
+    <li>Przyjmowanie prac</li>
+    <li>Recepcja</li>
+    <li>Nadzór na miejscu</li>
+    <li>Szczegółowe rozliczenie ze zleceniodawcą</li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section class="sek sek-szara" id="na-miejscu">
+ <div class="wrap">
+  <div class="sek-glowa">
+   <div>
+    <h2>Wystawa, wykłady, demonstracje i wieczory</h2>
+    <p class="lead">Tak wyglądają wydarzenia, które przygotowujemy. Kliknij zdjęcie, aby zobaczyć całą panoramę.</p>
+   </div>
+  </div>
+  <div class="gal" id="gal">
+   <button type="button" data-duze="img/g-slajd2-1920.webp" data-opis="Wystawa" aria-label="Powiększ zdjęcie: Wystawa"><picture><source media="(max-width:760px)" srcset="img/g-slajd2-m.webp"><img src="img/g-slajd2-960.webp" srcset="img/g-slajd2-960.webp 960w, img/g-slajd2-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Wystawa" loading="lazy" decoding="async"></picture><span class="znacznik">Wystawa</span></button>
+   <button type="button" data-duze="img/g-wejscie1-1920.webp" data-opis="Wystawa" aria-label="Powiększ zdjęcie: Wystawa"><picture><source media="(max-width:760px)" srcset="img/g-wejscie1-m.webp"><img src="img/g-wejscie1-960.webp" srcset="img/g-wejscie1-960.webp 960w, img/g-wejscie1-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Wystawa" loading="lazy" decoding="async"></picture><span class="znacznik">Wystawa</span></button>
+   <button type="button" data-duze="img/g-wyklady-1920.webp" data-opis="Wykłady" aria-label="Powiększ zdjęcie: Wykłady"><picture><source media="(max-width:760px)" srcset="img/g-wyklady-m.webp"><img src="img/g-wyklady-960.webp" srcset="img/g-wyklady-960.webp 960w, img/g-wyklady-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Wykłady" loading="lazy" decoding="async"></picture><span class="znacznik">Wykłady</span></button>
+   <button type="button" data-duze="img/g-wyklady2-1920.webp" data-opis="Wykłady" aria-label="Powiększ zdjęcie: Wykłady"><picture><source media="(max-width:760px)" srcset="img/g-wyklady2-m.webp"><img src="img/g-wyklady2-960.webp" srcset="img/g-wyklady2-960.webp 960w, img/g-wyklady2-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Wykłady" loading="lazy" decoding="async"></picture><span class="znacznik">Wykłady</span></button>
+   <button type="button" data-duze="img/g-dinek-1920.webp" data-opis="Wystawa" aria-label="Powiększ zdjęcie: Wystawa"><picture><source media="(max-width:760px)" srcset="img/g-dinek-m.webp"><img src="img/g-dinek-960.webp" srcset="img/g-dinek-960.webp 960w, img/g-dinek-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Wystawa" loading="lazy" decoding="async"></picture><span class="znacznik">Wystawa</span></button>
+   <button type="button" data-duze="img/g-recepcja-1920.webp" data-opis="Recepcja" aria-label="Powiększ zdjęcie: Recepcja"><picture><source media="(max-width:760px)" srcset="img/g-recepcja-m.webp"><img src="img/g-recepcja-960.webp" srcset="img/g-recepcja-960.webp 960w, img/g-recepcja-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Recepcja" loading="lazy" decoding="async"></picture><span class="znacznik">Recepcja</span></button>
+   <button type="button" data-duze="img/g-grupa_mozarta-1920.webp" data-opis="Imprezy towarzyszące" aria-label="Powiększ zdjęcie: Imprezy towarzyszące"><picture><source media="(max-width:760px)" srcset="img/g-grupa_mozarta-m.webp"><img src="img/g-grupa_mozarta-960.webp" srcset="img/g-grupa_mozarta-960.webp 960w, img/g-grupa_mozarta-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Imprezy towarzyszące" loading="lazy" decoding="async"></picture><span class="znacznik">Imprezy towarzyszące</span></button>
+   <button type="button" data-duze="img/g-palac1-1920.webp" data-opis="Imprezy towarzyszące" aria-label="Powiększ zdjęcie: Imprezy towarzyszące"><picture><source media="(max-width:760px)" srcset="img/g-palac1-m.webp"><img src="img/g-palac1-960.webp" srcset="img/g-palac1-960.webp 960w, img/g-palac1-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Imprezy towarzyszące" loading="lazy" decoding="async"></picture><span class="znacznik">Imprezy towarzyszące</span></button>
+   <button type="button" data-duze="img/g-skrzypaczki-1920.webp" data-opis="Imprezy towarzyszące" aria-label="Powiększ zdjęcie: Imprezy towarzyszące"><picture><source media="(max-width:760px)" srcset="img/g-skrzypaczki-m.webp"><img src="img/g-skrzypaczki-960.webp" srcset="img/g-skrzypaczki-960.webp 960w, img/g-skrzypaczki-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Imprezy towarzyszące" loading="lazy" decoding="async"></picture><span class="znacznik">Imprezy towarzyszące</span></button>
+   <button type="button" data-duze="img/g-ray-1920.webp" data-opis="Imprezy towarzyszące" aria-label="Powiększ zdjęcie: Imprezy towarzyszące"><picture><source media="(max-width:760px)" srcset="img/g-ray-m.webp"><img src="img/g-ray-960.webp" srcset="img/g-ray-960.webp 960w, img/g-ray-1920.webp 1920w" sizes="(min-width:1500px) 46vw, 50vw" width="960" height="215" alt="Imprezy towarzyszące" loading="lazy" decoding="async"></picture><span class="znacznik">Imprezy towarzyszące</span></button>
+  </div>
+  <p class="gal-info">Przesuń palcem, aby zobaczyć kolejne zdjęcia.</p>
+ </div>
+</section>
+
+<section class="sek sek-ciemna" id="cede">
+ <div class="wrap">
+  <div class="cede">
+   <div class="cede-l"><svg class="pasy-tlo" viewBox="0 0 235 157" aria-hidden="true"><polygon fill="#EE3338" points="65,5 217,5 230,45 65,45"/><polygon fill="#7779D6" points="30,60 175,60 167,98 5,98"/><polygon fill="#EE3338" points="63,115 230,115 217,152 45,152"/></svg><h2>CEDE, najstarsza polska wystawa stomatologiczna</h2></div>
+   <div class="opis">
+    <p>Środkowoeuropejską Wystawę Produktów Stomatologicznych CEDE organizujemy co roku od 1991. Wzięło w niej dotychczas udział 8&nbsp;673 wystawców i 292&nbsp;872 zwiedzających, a w części naukowej kolejnych edycji 54&nbsp;614 profesjonalistów.</p>
+    <p>W 2016 roku CEDE ustąpiła miejsca Światowemu Kongresowi Dentystycznemu, który zorganizowaliśmy dla Światowej Organizacji Dentystycznej FDI wraz z Polskim Towarzystwem Stomatologicznym: 16&nbsp;000 zwiedzających ze 152 państw i ponad 300 wystawców. W 2020 roku wystawa miała wersję online, Virtual Dental Exhibition by CEDE.</p>
+    <a class="btn btn-jasny" href="https://www.cede.pl/" target="_blank" rel="noopener">Strona wystawy CEDE</a>
+   </div>
+  </div>
+  <div class="edycje">
+   <div class="sek-glowa">
+    <h3>Kolejne edycje</h3>
+    <div class="przes" data-rzad="rz-cede"><button type="button" class="wst" aria-label="Poprzednie"><i class="ch ch-l"></i></button><button type="button" class="dal" aria-label="Następne"><i class="ch ch-p"></i></button></div>
+   </div>
+   <div class="rzad" id="rz-cede">
+    <a href="https://www.cede.pl/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2026_200_1.webp" width="200" height="126" alt="Logo CEDE 2026" loading="lazy" draggable="false"></div><b>2026</b><span>Poznań, 11-13.06</span></a>
+    <a href="https://www.cede.pl/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2024_200.webp" width="200" height="126" alt="Logo CEDE 2024" loading="lazy" draggable="false"></div><b>2024</b><span>Łódź, 7-9.11</span></a>
+    <a href="https://www.cede.pl/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2023.webp" width="200" height="126" alt="Logo CEDE 2023" loading="lazy" draggable="false"></div><b>2023</b><span>Łódź, 21-23.09</span></a>
+    <a href="https://www.cede.pl/2022/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2022_200x126.webp" width="200" height="126" alt="Logo CEDE 2022" loading="lazy" draggable="false"></div><b>2022</b><span>Łódź, 22-24.09</span></a>
+    <a href="https://www.cede.pl/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2021_logo_200_1.webp" width="200" height="126" alt="Logo CEDE 2021" loading="lazy" draggable="false"></div><b>2021</b><span>Łódź, 7-9.10</span></a>
+    <a href="https://www.vcede.pl/2020/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-vde_logo_200px_1.webp" width="200" height="126" alt="Logo CEDE 2020" loading="lazy" draggable="false"></div><b>2020</b><span>Virtual Dental Exhibition, online</span></a>
+    <a href="https://www.cede.pl/2019/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2019_logo_kolko_rok_200px_1.webp" width="200" height="126" alt="Logo CEDE 2019" loading="lazy" draggable="false"></div><b>2019</b><span>Poznań, 19-21.09</span></a>
+    <a href="https://www.cede.pl/2018/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2018_logo_kolko_200px_1.webp" width="200" height="126" alt="Logo CEDE 2018" loading="lazy" draggable="false"></div><b>2018</b><span>Poznań, 20-22.09</span></a>
+    <a href="https://www.cede.pl/2017/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2017_czerwone_kolo_126px.webp" width="200" height="126" alt="Logo CEDE 2017" loading="lazy" draggable="false"></div><b>2017</b><span>Poznań, 14-16.09</span></a>
+    <div class="ed"><div class="kafel"><img src="img/l-logo_fdi_2016_200px.webp" width="200" height="126" alt="Logo CEDE 2016" loading="lazy" draggable="false"></div><b>2016</b><span>Światowy Kongres Dentystyczny FDI, Poznań</span></div>
+    <a href="http://www.cede.pl/2015/" target="_blank" rel="noopener" class="ed"><div class="kafel"><img src="img/l-cede_2015_logo_niebieskie_200px.webp" width="200" height="126" alt="Logo CEDE 2015" loading="lazy" draggable="false"></div><b>2015</b><span>Poznań, 10-12.09</span></a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="kongresy">
+ <div class="wrap karty">
+  <div class="sek-glowa">
+   <div>
+    <h2>Kongresy i konferencje, które zorganizowaliśmy</h2>
+    <p class="lead">Zjazdy towarzystw naukowych w Poznaniu, Łodzi, Białymstoku, Wrocławiu i Krakowie.</p>
+   </div>
+   <div class="przes" data-rzad="rz-kon" style="color:var(--nieb)"><button type="button" class="wst" aria-label="Poprzednie"><i class="ch ch-l"></i></button><button type="button" class="dal" aria-label="Następne"><i class="ch ch-p"></i></button></div>
+  </div>
+  <div class="rzad" id="rz-kon">
+   <article class="karta"><div class="log"><img src="img/l-ptps_pts_konferencja.webp" width="200" height="126" alt="Logo: Konferencja Naukowo-Szkoleniowa Polskiego Towarzystwa Protetyki Stomatologicznej i Sekcji Protetyki PTS" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Poznań, 11-13.06.2026</span><h3>Konferencja Naukowo-Szkoleniowa Polskiego Towarzystwa Protetyki Stomatologicznej i Sekcji Protetyki PTS</h3><p>Współczesne metody diagnostyki, planowania leczenia i rehabilitacji protetycznej: wykłady, prezentacje przypadków, protetyka cyfrowa i analogowa.</p><a class="wiecej" href="https://www.ptpskonferencja.pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-epa_logo_200.webp" width="200" height="126" alt="Logo: 47th EPA Congress" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Białystok, 19-21.09.2024</span><h3>47th EPA Congress</h3><p>Kongres EPA to jedno z najważniejszych wydarzeń w kalendarzu protetyków z całego świata, z wykładowcami z Polski i zagranicy.</p><a class="wiecej" href="https://www.epa2024.pl/pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-ptge_2023.webp" width="200" height="126" alt="Logo: XX Kongres Polskiego Towarzystwa Gastroenterologii" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Łódź, 28-30.09.2023</span><h3>XX Kongres Polskiego Towarzystwa Gastroenterologii</h3><p>891 lekarzy z całej Polski, 3 dni, 3 sale, 31 sesji wykładowych i 19 sesji firmowych, 123 zaproszonych wykładowców.</p><a class="wiecej" href="https://www.20kongresptge.pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-logo_xii_lodzki_weekend_gastroenterologiczny_200.webp" width="200" height="126" alt="Logo: XII Łódzki Weekend Gastroenterologiczny" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Łódź, 14-15.10.2022</span><h3>XII Łódzki Weekend Gastroenterologiczny</h3><a class="wiecej" href="http://www.gastroweekend.pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-logo_70_pts_200px_1.webp" width="200" height="126" alt="Logo: Jubileusz 70-lecia Polskiego Towarzystwa Stomatologicznego" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Łódź, 26-27.11.2021</span><h3>Jubileusz 70-lecia Polskiego Towarzystwa Stomatologicznego</h3><a class="wiecej" href="https://jubileusz.pts.net.pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-logo_gastro_200px.webp" width="200" height="126" alt="Logo: XI Łódzki Weekend Gastroenterologiczny, edycja on-line" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Łódź, 19-20.11.2021</span><h3>XI Łódzki Weekend Gastroenterologiczny, edycja on-line</h3><a class="wiecej" href="http://www.gastroweekend.pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-gastroweekend_logo_data_200px_1.webp" width="200" height="126" alt="Logo: X Łódzki Weekend Gastroenterologiczny" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Łódź, 27-28.09.2019</span><h3>X Łódzki Weekend Gastroenterologiczny</h3><a class="wiecej" href="http://www.gastroweekend.pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-wdi_baner_na_strone_1_1.webp" width="200" height="126" alt="Logo: Wrocławskie Dni Implantologii 2019" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Wrocław, 31.05-1.06.2019</span><h3>Wrocławskie Dni Implantologii 2019</h3><a class="wiecej" href="http://www.osteokonfrontacje.pl/" target="_blank" rel="noopener">Strona wydarzenia</a></div></article>
+   <article class="karta"><div class="log"><img src="img/l-logo_baner_126px_1.webp" width="200" height="126" alt="Logo: 2. Międzynarodowy Kongres Stomatologii Laserowej" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Kraków, 24-25.11.2017</span><h3>2. Międzynarodowy Kongres Stomatologii Laserowej</h3></div></article>
+   <article class="karta"><div class="log"><img src="img/l-logo_fdi_2016_200px.webp" width="200" height="126" alt="Logo: Doroczny Światowy Kongres Dentystyczny FDI" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Poznań, 7-10.09.2016</span><h3>Doroczny Światowy Kongres Dentystyczny FDI</h3><p>Dla Światowej Organizacji Dentystycznej FDI, wspólnie z Polskim Towarzystwem Stomatologicznym.</p></div></article>
+   <article class="karta"><div class="log"><img src="img/l-logo_200.webp" width="200" height="126" alt="Logo: 33. Konferencja Naukowo-Szkoleniowa Sekcji Protetyki PTS" loading="lazy" draggable="false"></div><div class="tr"><span class="kiedy">Hotel Magellan, Bronisławów, 24-26.09.2015</span><h3>33. Konferencja Naukowo-Szkoleniowa Sekcji Protetyki PTS</h3></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="sek sek-szara" id="filmy">
+ <div class="wrap">
+  <div class="sek-glowa">
+   <div>
+    <h2>Filmy z wydarzeń</h2>
+    <p class="lead">Odtwarzają się bezpośrednio w przeglądarce, na telefonie i komputerze, bez dodatkowych wtyczek.</p>
+   </div>
+  </div>
+  <div class="filmy">
+   <figure class="film"><div class="ekran"><button type="button" data-film="https://www.exactus.pl/uploads/cms//CEDE_2018_film.mp4" aria-label="Odtwórz film: XXVII CEDE"><img src="img/f-cede2018.webp" alt="" loading="lazy"><span class="graj"><svg viewBox="0 0 20 20" aria-hidden="true"><polygon fill="currentColor" points="3,1 18,10 3,19"/></svg></span></button></div><figcaption>XXVII CEDE<span>Poznań, 20-22.09.2018</span></figcaption></figure>
+   <figure class="film"><div class="ekran"><button type="button" data-film="https://www.exactus.pl/uploads/cms//cede_2017_film.mp4" aria-label="Odtwórz film: XXVI CEDE"><img src="img/f-cede2017.webp" alt="" loading="lazy"><span class="graj"><svg viewBox="0 0 20 20" aria-hidden="true"><polygon fill="currentColor" points="3,1 18,10 3,19"/></svg></span></button></div><figcaption>XXVI CEDE<span>Poznań, 14-16.09.2017</span></figcaption></figure>
+   <figure class="film"><div class="ekran"><button type="button" data-film="https://www.exactus.pl/uploads/cms//FDIMontazFina_960_540_low.mp4" aria-label="Odtwórz film: Światowy Kongres Dentystyczny FDI"><img src="img/f-fdi2016.webp" alt="" loading="lazy"><span class="graj"><svg viewBox="0 0 20 20" aria-hidden="true"><polygon fill="currentColor" points="3,1 18,10 3,19"/></svg></span></button></div><figcaption>Światowy Kongres Dentystyczny FDI<span>Poznań, 7-10.09.2016</span></figcaption></figure>
+   <figure class="film"><div class="ekran"><button type="button" data-film="https://www.exactus.pl/uploads/cms//cede2015.mp4" aria-label="Odtwórz film: XXV CEDE"><img src="img/f-cede2015.webp" alt="" loading="lazy"><span class="graj"><svg viewBox="0 0 20 20" aria-hidden="true"><polygon fill="currentColor" points="3,1 18,10 3,19"/></svg></span></button></div><figcaption>XXV CEDE<span>Poznań, 10-12.09.2015</span></figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="wrap kontakt">
+  <div>
+   <h2>Porozmawiajmy o Państwa wydarzeniu</h2>
+   <p class="lead">Wystarczy kilka słów: rodzaj wydarzenia, termin i przybliżona liczba uczestników.</p>
+   <div class="dane">
+    <div><b>Exactus sp.j.</b><span>Al. Kościuszki 17, 90-418 Łódź</span><br><a href="tel:+48426322866">+48 42 632 28 66</a><br><a href="mailto:info@exactus.pl">info@exactus.pl</a></div>
+    <div><b>Marek Wiktorowski</b><a href="tel:+48602365147">+48 602 365 147</a><br><a href="mailto:m.wiktorowski@exactus.pl">m.wiktorowski@exactus.pl</a></div>
+    <div><b>Wystawa CEDE</b><a href="mailto:cede@cede.pl">cede@cede.pl</a><br><a href="https://www.cede.pl/" target="_blank" rel="noopener">www.cede.pl</a></div>
+   </div>
+  </div>
+  <form id="form" novalidate>
+   <div><label for="f-imie">Imię i nazwisko</label><input id="f-imie" name="imie" autocomplete="name"></div>
+   <div><label for="f-org">Towarzystwo / firma</label><input id="f-org" name="org" autocomplete="organization"></div>
+   <div><label for="f-kontakt">E-mail lub telefon</label><input id="f-kontakt" name="kontakt" autocomplete="email"></div>
+   <div><label for="f-rodzaj">Rodzaj wydarzenia</label><select id="f-rodzaj" name="rodzaj"><option>Zjazd lub kongres</option><option>Konferencja</option><option>Wystawa lub targi</option><option>Inne</option></select></div>
+   <div class="pelne"><label for="f-tresc">Termin, miejsce, liczba uczestników</label><textarea id="f-tresc" name="tresc"></textarea></div>
+   <button class="btn" type="submit">Wyślij zapytanie</button>
+   <p class="form-info">Odpowiadamy w dni robocze.</p>
+   <p class="form-ok pelne" id="form-ok" role="status">To podgląd strony: formularz zacznie wysyłać wiadomości po wdrożeniu.</p>
+  </form>
+ </div>
+ <div class="wrap">
+  <div class="mapa" id="mapa"><div class="adr"><b>Al. Kościuszki 17, 90-418 Łódź</b><p>Mapa Google wczytuje się po zgodzie na pliki cookies.</p><button class="btn" type="button" id="mapa-btn">Pokaż mapę Google</button><a class="trasa" href="https://www.google.com/maps/dir/?api=1&amp;destination=Aleja+Tadeusza+Ko%C5%9Bciuszki+17%2C+90-418+%C5%81%C3%B3d%C5%BA" target="_blank" rel="noopener">Wyznacz trasę</a></div><svg class="pasy-tlo" viewBox="0 0 235 157" aria-hidden="true"><polygon fill="#EE3338" points="65,5 217,5 230,45 65,45"/><polygon fill="#3F4096" points="30,60 175,60 167,98 5,98"/><polygon fill="#EE3338" points="63,115 230,115 217,152 45,152"/></svg></div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div>
+   <div class="pierwsza">
+    <a class="logo" href="#" aria-label="Exactus - strona główna"><svg viewBox="0 0 235 157" aria-hidden="true"><polygon fill="#EE3338" points="65,5 217,5 230,45 65,45"/><polygon fill="#3F4096" points="30,60 175,60 167,98 5,98"/><polygon fill="#EE3338" points="63,115 230,115 217,152 45,152"/></svg><span class="slowo">exactus</span></a>
+    <p>Exactus Wiktorowski i Wspólnicy sp.j.<br>NIP 725 001 46 79, REGON 470502921<br>KRS 0000090731</p>
+   </div>
+   <div><b>Strona</b><ul><li><a href="#firma">Firma</a></li><li><a href="#na-miejscu">Na miejscu</a></li><li><a href="#cede">CEDE</a></li><li><a href="#kongresy">Kongresy i konferencje</a></li></ul></div>
+   <div><b>Kontakt</b><ul><li>Al. Kościuszki 17, 90-418 Łódź</li><li><a href="tel:+48426322866">+48 42 632 28 66</a></li><li><a href="mailto:info@exactus.pl">info@exactus.pl</a></li></ul></div>
+   <div><b>Wydarzenia</b><ul><li><a href="https://www.cede.pl/" target="_blank" rel="noopener">CEDE</a></li><li><a href="#filmy">Filmy</a></li><li><a href="#kontakt">Zapytanie</a></li></ul></div>
+  </div>
+  <div class="dol">
+   <span class="copy">© 2026 Exactus sp.j. Podgląd koncepcji strony, treści i zdjęcia z exactus.pl.</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=exactus.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<nav class="mob" id="mob" aria-label="Szybki kontakt">
+ <a href="tel:+48426322866"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.6 1.6a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Zadzwoń</a>
+ <a href="#kontakt">Zapytaj o wydarzenie</a>
+</nav>
+
+<div class="zgoda" id="zgoda" hidden>
+ <p>Mapa Google zapisuje pliki cookies. Strona bez mapy działa bez nich.</p>
+ <button type="button" class="tak" id="zg-tak">Zgadzam się</button>
+ <button type="button" id="zg-nie">Tylko niezbędne</button>
+</div>
+<script>try{if(!localStorage.getItem('ex-zgoda'))document.getElementById('zgoda').hidden=false}catch(e){document.getElementById('zgoda').hidden=false}</script>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Zdjęcie">
+ <button class="zam" type="button" aria-label="Zamknij"><i class="x"></i></button>
+ <button class="pop" type="button" aria-label="Poprzednie"><i class="ch ch-l"></i></button>
+ <img alt="">
+ <p></p>
+ <button class="nas" type="button" aria-label="Następne"><i class="ch ch-p"></i></button>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
